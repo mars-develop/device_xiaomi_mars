@@ -17,6 +17,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_platform_info.xml
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResVenus \
+    SettingsResVenus \
+    SystemUIResVenus
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
