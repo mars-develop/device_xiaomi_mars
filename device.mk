@@ -21,9 +21,10 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pe
 
 PRODUCT_PACKAGES += \
-    FrameworksResVenus \
-    SettingsResVenus \
-    SystemUIResVenus
+    FrameworksResMars \
+    SettingsProviderOverlayMars \
+    SettingsResMars \
+    SystemUIResMars
 
 # Touch
 PRODUCT_PACKAGES += \
