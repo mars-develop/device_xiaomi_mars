@@ -14,3 +14,6 @@ TARGET_BOOTLOADER_BOARD_NAME := mars
 
 # Include proprietary files
 include vendor/xiaomi/mars/BoardConfigVendor.mk
+
+# Kernel
+TARGET_KERNEL_CONFIG += vendor/haydn_QGKI.config
