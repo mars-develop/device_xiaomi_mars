@@ -23,6 +23,10 @@ PRODUCT_PACKAGES += \
     SettingsResVenus \
     SystemUIResVenus
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.xiaomi
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
