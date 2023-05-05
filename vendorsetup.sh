@@ -16,7 +16,7 @@ echo 'Cloning Vendor tree [3/5]'
 
 # Vendor Tree
 
-git clone https://github.com/haydn-development/vendor_xiaomi_mars.git vendor/xiaomi/haydn
+git clone https://github.com/mars-develop/vendor_xiaomi_mars.git vendor/xiaomi/haydn
 
 echo 'Cloning Vendor-Common tree [4/5]'
 
