@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi
+    vendor.lineage.touch@1.0-service.xiaomi_sm8350
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
