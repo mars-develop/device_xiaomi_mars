@@ -22,7 +22,7 @@ include vendor/xiaomi/mars/BoardConfigVendor.mk
 TARGET_SCREEN_DENSITY := 560
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/haydn_QGKI.config
+TARGET_KERNEL_CONFIG += vendor/mars_QGKI.config
 
 # Kernel modules
 BOOT_KERNEL_MODULES := \
