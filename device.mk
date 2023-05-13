@@ -22,13 +22,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pe
 
 PRODUCT_PACKAGES += \
     FrameworksResMars \
-    SettingsProviderOverlayMars \
     SettingsResMars \
     SystemUIResMars
-
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_sm8350
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
