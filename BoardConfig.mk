@@ -22,15 +22,19 @@ include vendor/xiaomi/mars/BoardConfigVendor.mk
 TARGET_SCREEN_DENSITY := 560
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/mars_QGKI.config
+TARGET_KERNEL_SOURCE := kernel/xiaomi/mars
+TARGET_KERNEL_CONFIG := vendor/mars_defconfig
+TARGET_KERNEL_CLANG_VERSION := prelude
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin
+KERNEL_SUPPORTS_LLVM_TOOLS := true
 
 # Kernel modules
 BOOT_KERNEL_MODULES := \
-    focaltech_touch.ko \
+    fts_touch_spi.ko \
     hwid.ko \
-    xiaomi_touch.ko \
-    msm_drm.ko
-	
+    xiaomi_touch.ko
+
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 
 # Partitions
