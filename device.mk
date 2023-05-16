@@ -21,6 +21,10 @@ PRODUCT_COPY_FILES += \
 # Fingerprint
 TARGET_HAS_UDFPS := true
 
+# PowerShare
+PRODUCT_PACKAGES += \
+    vendor.lineage.powershare@1.0-service.xiaomi
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
